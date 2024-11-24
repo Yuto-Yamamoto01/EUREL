@@ -41,15 +41,11 @@ Distance measurements are crucial for analyzing spatial relationships in satelli
 In the [`measure-distances.ipynb`](satellite_images/measure-distances-on-satellite-images.ipynb) notebook, we utilize several methods to measure distances:
 
 **Geodesic Distance**: This is the shortest distance between two points on the Earth's surface, considering the Earth's curvature. It is often calculated using the Haversine formula:
-    $$
-    a = \sin^2\left(\frac{\Delta \phi}{2}\right) + \cos(\phi_1) \cos(\phi_2) \sin^2\left(\frac{\Delta \lambda}{2}\right)
-    $$
-    $$
-    c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right)
-    $$
-    $$
-    d = R \cdot c
-    $$
+    $$a = \sin^2\left(\frac{\Delta \phi}{2}\right) + \cos(\phi_1) \cos(\phi_2) \sin^2\left(\frac{\Delta \lambda}{2}\right)$$
+    
+$$c = 2 \cdot \text{atan2}\left(\sqrt{a}, \sqrt{1-a}\right)$$
+    
+$$d = R \cdot c$$
     where \( \phi \) is latitude, \( \lambda \) is longitude, and \( R \) is the Earth's radius.
 
 These distance measurements help in various applications such as mapping water bodies, monitoring environmental changes, and urban planning.
