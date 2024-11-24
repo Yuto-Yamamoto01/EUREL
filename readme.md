@@ -1,4 +1,4 @@
-# Water level estimateion based on satellite images and historical data
+# Water level estimation based on satellite images and historical data
 
 <center><img src="images/logo.png"></center>
 
@@ -8,13 +8,13 @@ To do this, we're using images from Sentinel-2 satellites and processing them to
 
 ![sentinel to ndwi  to distance](images/turning%20satellite%20image%20to%20ndwi%20and%20measure%20on%20ndwi.png)
 
-Data what we are using:
+Data that we are using:
 
 1. [River Water Level 2002-present (vector), global, Near Real Time – version 2](https://land.copernicus.eu/en/products/water-bodies/water-level-rivers-near-real-time-v2.0)
 2. [Water Level Rivers 2002-present (vector), global, per overpass - version 2](https://www.wekeo.eu/data?view=dataset&dataset=EO%3ACLMS%3ADAT%3ACLMS_GLOBAL_WL_RIVERS_V2_DAILY_GEOJSON)
 3. [Normalized Difference Water Index Sentinel-2 images](https://custom-scripts.sentinel-hub.com/sentinel-2/ndwi/)
 
-Data what we collected to this project:
+Data that we collected for this project:
 4. [River Water Level Data in the EU](https://www.kaggle.com/datasets/sndorburian/river-water-level-data-in-the-eu)
 
 
@@ -25,11 +25,11 @@ Live scripts:
 
 ----------------------------------------------------------
 
-> The NDWI is used in [`using-sentinel-satellite-images.ipynb`](satellite_images/using-sentinel-satellite-images.ipynb) to monitor changes related to water content in water bodies. As water bodies strongly absorb light in visible to infrared electromagnetic spectrum, NDWI uses green and near infrared bands to highlight water bodies. It is sensitive to built-up land and can result in over-estimation of water bodies.
+> The NDWI is used in [`using-sentinel-satellite-images.ipynb`](satellite_images/using-sentinel-satellite-images.ipynb) to monitor changes related to water content in water bodies. As water bodies strongly absorb light in the visible to the infrared electromagnetic spectrum, NDWI uses green and near-infrared bands to highlight water bodies. It is sensitive to built-up land and can result in over-estimating water bodies.
 >
 > $$NDWI = \frac{green-nir}{green+nir}$$
 >
-> Values description: Index values greater than 0.5 usually correspond to water bodies. Vegetation usually corresponds to much smaller values and built-up areas to values between zero and 0.2.
+> Values Description: Index values greater than 0.5 usually correspond to water bodies. Vegetation usually corresponds to much smaller values and built-up areas between zero and 0.2.
 >
 > more: https://custom-scripts.sentinel-hub.com/custom-scripts/hls/ndwi/
 
