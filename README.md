@@ -51,3 +51,7 @@ $$d = R \cdot c$$
 These distance measurements help in various applications such as mapping water bodies, monitoring environmental changes, and urban planning.
 
 For more details, refer to the `measure-distances.ipynb` notebook.
+
+
+## Water Level Estimation
+We made a model to predict the water level of Rhine river. The data and result are placed in Rhine-river_water-level_prediction. ARIMA model is mainly used for the prediction.
